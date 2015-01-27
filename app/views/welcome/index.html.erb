@@ -1,0 +1,18 @@
+<h1>Naan Perumal Murugan</h1>
+<p>Ideas are immortal. Some random people cannot decide what ideas are allowed to be shared and what cannot. World stood with 'Charlie Hebdo' and it is time to stand with 'Perumal Murugan' also. This time each one of us will become the author and we will echo the same ideas which they can no longer silence. Let them try to burn the internet if it is possible to do so.</p>
+
+<h2>Stand with the author in few simple steps.</h2>
+<ul>
+<li>Pick up the book, <a href="https://www.goodreads.com/book/show/20655934-one-part-woman">One Part Woman</a></li>
+<li>Select any chapter and select any line in it.</li>
+<li>Tweet the line in the following format, <br><span>#NaanPerumal Chap&lt;chapter-num&gt; Line&lt;line-num&gt; '&lt;line-text&gt;'</span></li>
+<li>Checkout the respective page of the chapter in the website. Thank you for supporting the author.</li>
+</ul>
+<div id="chapters">
+	<h2>Chapters of the book, 'One Part Woman'</h2>
+	<ul>
+		<% (1..34).each do |i| %>
+			<li><%= link_to 'Chapter '+i.to_s, {:controller => "chapters", :action => "chap"+i.to_s} %></li>
+		<% end %>
+	</ul>
+</div>

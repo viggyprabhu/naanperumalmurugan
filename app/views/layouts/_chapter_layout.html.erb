@@ -1,0 +1,21 @@
+<h2>Chapter <%= @chapnum %></h2>
+<ul class="list-group">
+	<% @lines.each do |line| %>
+		<li class="list-group-item">
+			<div class="row vertical-divider">
+				<div class="span2 author pull-left">
+					<a href='http://twitter.com/<%= line.author.name %>'>
+						<img src='<%= line.author.profile_pic %>'>
+						<br>
+						<%= line.author.name %>
+					</a>
+				</div>
+				<div class="span6 content pull-left">
+					<div class="text">
+						<%= line.content %>
+					</div>
+				</div>
+			</div>
+		</li>
+	<% end %>
+</ul>

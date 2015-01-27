@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyString
+  chapter: 1
+  linenumber-integer: MyString
+
+two:
+  content: MyString
+  chapter: 1
+  linenumber-integer: MyString

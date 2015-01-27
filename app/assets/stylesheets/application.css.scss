@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap";
+
+body {
+	padding-top: 60px;
+	background: url('Perumal_thehindu_kannan_sundar_flipped.jpg') bottom right no-repeat fixed;
+}
+@import "bootstrap-sprockets";
+
+.container {
+	width: auto;
+	margin-left: 10%;
+	margin-right: 20%;
+}
+
+.content {
+	padding-left: 2%;
+	text-align: center;	
+	background:url('quote-right.png') top left no-repeat,
+			   url('quote-left.png') top right no-repeat;
+	background-size: 5%;
+}
+
+.text{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.author {
+	text-align: center;	
+	border: 2px;
+}
+
+// Copied Shamelessly and Unintelligibly From (CSUF) https://stackoverflow.com/a/26599613/606880
+.row.vertical-divider {
+  overflow: hidden;
+}
+.row.vertical-divider > div[class^="span"] {
+  text-align: center;
+  padding-bottom: 100px;
+  margin-bottom: -100px;
+  border-left: 3px solid #BBB;
+  border-right: 3px solid #BB;
+}
+.row.vertical-divider div[class^="span"]:first-child {
+  border-left: none;
+  padding-right: 2%;
+}
+.row.vertical-divider div[class^="span"]:last-child {
+  border-right: none;
+}
+
+// Copied Shamelessly and Unintelligibly From (CSUF) http://jsfiddle.net/devinwalker/8BWqE/
+
+.dropdown-menu {
+	color: #777;
+    background-color: #000;
+    
+}
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+    color: #777;
+    background-color: #000;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+    display: block;
+    color: #FFF;
+    background-color: #000;
+}
+
+.navbar .sub-menu:before {
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+.navbar .sub-menu:after {
+    border-top: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent;
+    left: 10px;
+    top: 11px;
+    left: -6px;
+}
