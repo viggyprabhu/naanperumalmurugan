@@ -69,6 +69,7 @@ GEM
     minitest (5.5.1)
     multi_json (1.10.1)
     multipart-post (2.0.0)
+    mysql2 (0.3.17)
     naught (1.0.0)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -152,6 +153,7 @@ DEPENDENCIES
   dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails
+  mysql2 (~> 0.3.11)
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
