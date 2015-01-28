@@ -1,9 +1,9 @@
 require_relative "../../app/models/line.rb"
 class TweetContentParser
 
-	MAIN_HASHTAG='#naanperumal'
-    CHAP_HASHTAG='#chap'
-    LINE_HASHTAG='#line'
+	MAIN_HASHTAG='#NaanPerumal'
+    CHAP_HASHTAG='Chap'
+    LINE_HASHTAG='Line'
 	
 	def parse(tweets)
 		tweets.each do |tweet|
@@ -26,7 +26,9 @@ class TweetContentParser
 	end
 
 	def get_tweet_content(str)
-		cont = str[str.index(':')+1, str.length]
+		#cont = str[str.index(':')+1, str.length]
+		cont = str.scan(/\'([^"]*)\'/).first.first
+		return cont
 	end
 
 	def store_tweet(name,profile_pic, chapnum,linenum,text,tweet_id)
