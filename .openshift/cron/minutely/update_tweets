@@ -1,0 +1,1 @@
+cd $OPENSHIFT_REPO_DIR && bundle exec rake twitter_cron_job:get_latest_tweets >> log/cron_log
